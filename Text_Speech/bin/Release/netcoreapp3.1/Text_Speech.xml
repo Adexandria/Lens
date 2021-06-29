@@ -5,9 +5,38 @@
     </assembly>
     <members>
         <member name="M:Text_Speech.Controllers.TextController.Post(Microsoft.AspNetCore.Http.IFormFile)">
-            <param name="file"></param>
+            <param name="file">
+            The text image can either be in jpeg or png
+            </param>
              <summary>
-             To convert a text image into an Audio File.The text image can either be in jpeg or png
+             Convert a text image into an Audio File.
+             The text image can either be in jpeg or png.
+             </summary>
+             
+             <returns>A string status</returns>
+        </member>
+        <member name="M:Text_Speech.Controllers.ToDocument.TextToDocument(Microsoft.AspNetCore.Http.IFormFile)">
+            <param name="file">
+            The text image can either be in jpeg or png
+            </param>
+             <summary>
+             Converts a text image into a document File.
+             The text image can either be in jpeg or png.
+             </summary>
+             
+             <returns>A string status</returns>
+        </member>
+        <member name="M:Text_Speech.Controllers.ToDocument.TextToExistingDocument(Microsoft.AspNetCore.Http.IFormFile,Microsoft.AspNetCore.Http.IFormFile)">
+            <param name="file">
+            The text image can either be in jpeg or png
+            </param>
+             ///<param name="document">
+            The doc file
+            </param>
+             <summary>
+             Converts a text image and stores it into an existing document File.
+             The text image can either be in jpeg or png.
+             A doc media type is only accepted
              </summary>
              
              <returns>A string status</returns>

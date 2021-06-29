@@ -19,9 +19,7 @@
         "LOCATION": "centralus",
         "COMPUTER_VISION_ENDPOINT": "https://scantext.cognitiveservices.azure.com/",
         "SPEECH_TRANSLATOR_ENDPOINT": "https://centralus.tts.speech.microsoft.com/cognitiveservices/v1",
-        "TRANSLATOR_ENDPOINT": "https://api.cognitive.microsofttranslator.com/",
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "TRANSLATOR_SUBSCRIPTION_KEY": "70ddd7262c804025b9c0a4c56360bcf5"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "Text_Speech": {

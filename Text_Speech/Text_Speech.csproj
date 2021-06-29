@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>111d4ce2-b5fd-4fe8-b13f-f6b3ce0d03da</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\T14\Documents\TextToSpeechAPI\Text_Speech\Text_Speech.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\T14\Documents\Local Git\Lens\Text_Speech\Text_Speech.xml</DocumentationFile>
     <OutputPath></OutputPath>
     <WarningLevel>4</WarningLevel>
     <NoWarn>1701;1702;1591</NoWarn>
@@ -13,7 +14,10 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.8.1" />
+    <PackageReference Include="Azure.Storage.Files.Shares" Version="12.1.0" />
+    <PackageReference Include="Azure.Storage.Queues" Version="12.2.0" />
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.16.0" />
+    <PackageReference Include="Microsoft.Extensions.Azure" Version="1.0.0" />
     <PackageReference Include="MimeMapping" Version="1.0.1.37" />
     <PackageReference Include="MimeTypes" Version="2.2.0">
       <PrivateAssets>all</PrivateAssets>

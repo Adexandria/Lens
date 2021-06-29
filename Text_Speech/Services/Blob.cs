@@ -28,7 +28,7 @@ namespace Text_Speech.Services
         }
         public async Task UploadFile(FileStream file)
         {
-            var blobClient = GetBlobServiceClient("Document.doc");
+            var blobClient = GetBlobServiceClient("Document.Docx");
             await blobClient.UploadAsync(file, overwrite: true);
 
         }

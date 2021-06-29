@@ -44,9 +44,21 @@
               "target": "Package",
               "version": "[12.8.1, )"
             },
+            "Azure.Storage.Files.Shares": {
+              "target": "Package",
+              "version": "[12.1.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
             "Microsoft.CognitiveServices.Speech": {
               "target": "Package",
               "version": "[1.16.0, )"
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "MimeMapping": {
               "target": "Package",

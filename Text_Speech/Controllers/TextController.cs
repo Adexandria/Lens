@@ -28,6 +28,7 @@ namespace Text_Speech.Controllers
         private readonly IBlob blob;
 
         readonly TextToString toString;
+
         FileInfo file;
 
         readonly static string speechTranslateKey = Environment.GetEnvironmentVariable("SPEECH_TRANSLATOR_SUBSCRIPTION_KEY");
@@ -108,7 +109,7 @@ namespace Text_Speech.Controllers
             // a ssml template file
             string [] speakerfile = await blob.DownloadFile("Speaker.ssml");
 
-            file = new FileInfo("Speakers");
+            file = new FileInfo("Speakers.ssml");
             var ssmlFile =   file.Create();
 
             StringBuilder ssmlBuilder = new StringBuilder();

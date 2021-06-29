@@ -237,10 +237,15 @@ C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Text_S
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Text_Speech.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Text_Speech.pdb
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Azure.Identity.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Azure.Storage.Files.Shares.dll
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Azure.Storage.Queues.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Microsoft.CognitiveServices.Speech.csharp.dll
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Azure.dll
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\MimeMapping.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\NAudio.dll
@@ -292,7 +297,6 @@ C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\runtim
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\runtimes\win10-arm64\native\Microsoft.CognitiveServices.Speech.core.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\runtimes\win10-arm64\native\Microsoft.CognitiveServices.Speech.extension.audio.sys.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Debug\netcoreapp3.1\runtimes\win10-arm64\native\Microsoft.CognitiveServices.Speech.extension.kws.dll
-C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.csprojAssemblyReference.cache
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.AssemblyInfoInputs.cache
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.AssemblyInfo.cs
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.csproj.CoreCompileInputs.cache
@@ -306,3 +310,4 @@ C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_S
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.pdb
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.genruntimeconfig.cache
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Debug\netcoreapp3.1\Text_Speech.csprojAssemblyReference.cache

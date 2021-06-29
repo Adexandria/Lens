@@ -59,7 +59,7 @@ namespace Text_Speech.Controllers
                 await ToDocs(sentence);
                 await blob.UploadFile(documentFile.OpenRead());
                
-                var url = blob.GetUri("Document.doc");
+                var url = blob.GetUri("Document.Docx");
                 return Ok($"Sucessful, copy on this {url}");
             }
             catch (Exception e)
@@ -87,21 +87,25 @@ namespace Text_Speech.Controllers
         {
             try
             {
-                string mediatype = file.ContentType;
+                string mediatype = document.ContentType;
                 var sentence = await toString.Post(file);
                 if (sentence == "file not found" || document == null)
                 {
                     return NotFound("File not found");
                 }
-                if (sentence == "The image must be in jpeg or png" || mediatype != MimeMapping.KnownMimeTypes.Doc)
+                if (sentence == "The image must be in jpeg or png")
                 {
                     return BadRequest("The image must be in jpeg or png");
+                }
+               if (mediatype != MimeMapping.KnownMimeTypes.Bin)
+                {
+                    return BadRequest("The document must be in a docx or doc file");
                 }
                 await blob.Upload(document);
                 await ToExistingDocs(sentence,document);
                 await blob.UploadFile(documentFile1.OpenRead());
                 
-                var url = blob.GetUri("Document.doc");
+                var url = blob.GetUri("Document.Docx");
                 return Ok($"Sucessful, copy on this {url}");
             }
             catch (Exception e)
@@ -113,7 +117,7 @@ namespace Text_Speech.Controllers
         [NonAction]
         private async Task ToDocs(string sentence) 
         {
-            documentFile = new FileInfo("Document2.doc");
+            documentFile = new FileInfo("Document2.Docx");
             var document = documentFile.Create();
             StreamWriter writer = new StreamWriter(document);
             await writer.WriteAsync(sentence);
@@ -130,7 +134,7 @@ namespace Text_Speech.Controllers
                 stringBuilder.Append(line);
             }
             stringBuilder.Append(sentence);
-            documentFile1  = new FileInfo("Document1.doc");
+            documentFile1  = new FileInfo("Document1.Docx");
             var document = documentFile1.Create();
             StreamWriter writer = new StreamWriter(document);
             await writer.WriteAsync(stringBuilder.ToString());

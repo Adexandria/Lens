@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("111d4ce2-b5fd-4fe8-b13f-f6b3ce0d03da")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Text_Speech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
