@@ -133,6 +133,7 @@ namespace Text_Speech.Controllers
             {
                 stringBuilder.Append(line);
             }
+            stringBuilder.Append(" ");
             stringBuilder.Append(sentence);
             documentFile1  = new FileInfo("Document1.Docx");
             var document = documentFile1.Create();
