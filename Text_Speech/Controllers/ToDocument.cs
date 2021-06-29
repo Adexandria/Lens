@@ -73,7 +73,7 @@ namespace Text_Speech.Controllers
         ///The text image can either be in jpeg or png
         ///</param>
         /// ///<param name="document">
-        ///The doc file
+        ///The docx or doc file
         ///</param>
         /// <summary>
         /// Converts a text image and stores it into an existing document File.
