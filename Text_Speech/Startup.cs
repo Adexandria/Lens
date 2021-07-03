@@ -40,11 +40,11 @@ namespace Text_Speech
             services.AddScoped<IBlob, Blob>();
             services.AddSwaggerGen(setupAction =>
             {
-                setupAction.SwaggerDoc("TextToSpeechAPISpecification", new Microsoft.OpenApi.Models.OpenApiInfo()
+                setupAction.SwaggerDoc("LensAPISpecification", new Microsoft.OpenApi.Models.OpenApiInfo()
                 {
-                    Title = "Text to Speech Api",
+                    Title = "Lens Api",
                     Version = "1.0",
-                    Description = "A REST API that can convert a text image into an audio file or document or an existing document",
+                    Description = "A REST API that converts a text image to an audio file or a document.It can also convert a text image into an existing document",
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact()
                     {
                         Email = "adeolaaderibigbe09@gmail.com",
@@ -82,7 +82,7 @@ namespace Text_Speech
             app.UseSwagger();
             app.UseSwaggerUI(setupAction =>
             {
-                setupAction.SwaggerEndpoint("/swagger/TextToSpeechAPISpecification/swagger.json", "My Text To Speech Api");
+                setupAction.SwaggerEndpoint("/swagger/LensAPISpecification/swagger.json", "My Lens Api");
                 setupAction.RoutePrefix = string.Empty;
             });
             app.UseRouting();

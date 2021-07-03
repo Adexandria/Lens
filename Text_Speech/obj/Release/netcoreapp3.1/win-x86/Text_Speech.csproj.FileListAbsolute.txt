@@ -1332,3 +1332,4 @@ C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Release\netcoreapp3.1\win-
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Release\netcoreapp3.1\win-x86\Azure.Storage.Queues.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Release\netcoreapp3.1\win-x86\Microsoft.Extensions.Azure.dll
 C:\Users\T14\Documents\Local Git\Lens\Text_Speech\bin\Release\netcoreapp3.1\win-x86\Microsoft.Identity.Client.dll
+C:\Users\T14\Documents\Local Git\Lens\Text_Speech\obj\Release\netcoreapp3.1\win-x86\NuGet\A8931C1237811F69CCE14ECA10D2CEA5E2F9E111\MimeTypes\2.2.0\MimeTypes.cs

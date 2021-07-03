@@ -9,6 +9,7 @@ namespace Text_Speech.Services
     {
         Task Upload(IFormFile model);
         Task UploadFile(FileStream file);
+      
         Task UploadStream(Stream model);
         Uri GetUri(string file);
         Task<byte[]> Download(IFormFile file);

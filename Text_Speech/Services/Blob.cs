@@ -19,12 +19,8 @@ namespace Text_Speech.Services
         public async Task Upload(IFormFile model)
         {
             var blobClient = GetBlobServiceClient(model.FileName);
-            var isExists = await blobClient.ExistsAsync();
-            if (!isExists)
-            {
-                await blobClient.UploadAsync(model.OpenReadStream());
-            }
-        
+            await blobClient.UploadAsync(model.OpenReadStream(), overwrite: true);
+
         }
         public async Task UploadFile(FileStream file)
         {
@@ -32,6 +28,7 @@ namespace Text_Speech.Services
             await blobClient.UploadAsync(file, overwrite: true);
 
         }
+       
         public async Task UploadStream(Stream model)
         {
             var blobClient = GetBlobServiceClient("Audio.mp3");

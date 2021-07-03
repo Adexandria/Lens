@@ -56,10 +56,9 @@ namespace Text_Speech.Controllers
                 {
                     return BadRequest("The image must be in jpeg or png");
                 }
-                await ToDocs(sentence);
-                await blob.UploadFile(documentFile.OpenRead());
-               
+                ToDocs(sentence);
                 var url = blob.GetUri("Document.Docx");
+               
                 return Ok($"Sucessful, copy on this {url}");
             }
             catch (Exception e)
@@ -102,9 +101,7 @@ namespace Text_Speech.Controllers
                     return BadRequest("The document must be in a docx or doc file");
                 }
                 await blob.Upload(document);
-                await ToExistingDocs(sentence,document);
-                await blob.UploadFile(documentFile1.OpenRead());
-                
+                await ToExistingDocs(sentence,document);  
                 var url = blob.GetUri("Document.Docx");
                 return Ok($"Sucessful, copy on this {url}");
             }
@@ -115,14 +112,19 @@ namespace Text_Speech.Controllers
 
         }
         [NonAction]
-        private async Task ToDocs(string sentence) 
+        private void ToDocs(string sentence) 
         {
-            documentFile = new FileInfo("Document2.Docx");
-            var document = documentFile.Create();
-            StreamWriter writer = new StreamWriter(document);
-            await writer.WriteAsync(sentence);
-            writer.Close();
-            
+            documentFile = new FileInfo("Document.Docx");
+            using (var file = new FileStream(documentFile.FullName, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite))
+            {
+                using (StreamWriter writer = new StreamWriter(file))
+                {
+                    writer.Write(sentence);
+                    writer.Close();
+                }
+                file.Close();
+            }
+            blob.UploadFile(documentFile.Open(FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite));
         }
         [NonAction]
         private async Task ToExistingDocs(string sentence,IFormFile documentFile) 
@@ -135,11 +137,7 @@ namespace Text_Speech.Controllers
             }
             stringBuilder.Append(" ");
             stringBuilder.Append(sentence);
-            documentFile1  = new FileInfo("Document1.Docx");
-            var document = documentFile1.Create();
-            StreamWriter writer = new StreamWriter(document);
-            await writer.WriteAsync(stringBuilder.ToString());
-            writer.Close();
+            ToDocs(stringBuilder.ToString());
         } 
     }
 }
